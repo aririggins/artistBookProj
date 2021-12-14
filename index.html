@@ -2,113 +2,105 @@
 <head>
   <title>Art Book</title>
 <style>
+
+body {
+  background-color: #CEC33A;
+}
+
+h1 {
+  color: #b8af35;
+  font-family: arial, sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  padding-top: 10px;
+}
+
+.squareimage {
+  padding-top: 20px;
+  padding-left: 10%;
+  /* float: left; */
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 2%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 3%;
+}
+
+.row {
+  padding-top: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 div.gallery {
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
+  border: 2px solid aquamarine;
 }
 
 * {
   box-sizing: border-box;
 }
 
-section {
-  width: 100%;
-  background-color: aquamarine;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 49.99999%;
-  /* width: 24.99999%; */
-}
-
-/* @media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-} */
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-/* .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
-
 .rounded-circle {
-  border-radius:50%!important
+  border-radius:50%!important;
+  float: left;
+
 }
 </style>
 </head>
 <body>
+<center>
+  <h1>Ari's Artist Book</h1>
+</center>
 
-<h2>Ari's Artist Book</h2>
-
-<section class="intro">
-  <div class="responsive">
-    <div class="gallery">
+<div class="row">
+  <div class="column1">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_226a8Zs2C8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+  </div>
+  <div class="column1">
+    <div class="squareimage">
       <a target="_blank" href="media/email.png">
-        <img src="media/email.png" alt="Cinque Terre" width="600" height="400">
+        <img src="media/email.png" alt="Cinque Terre" width="100%" height="auto">
       </a>
     </div>
-  </section>
-
-  <video width="320" height="240" controls>
-    <source src="IMG_7665.mov" type="video/mov">
-    <!-- <source src="movie.ogg" type="video/ogg"> -->
-  </video>
-</div>
-
-<img class="rounded-circle" src="media/IMG_7645D.JPG" alt="Generic placeholder image" width="140" height="140">
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="media/IMG_7645D.JPG">
-      <img src="media/IMG_7645D.JPG" alt="Forest" width="600" height="400">
-    </a>
   </div>
+    <!-- <img class="rounded-circle" src="media/IMG_7645D.JPG" alt="Generic placeholder image" width="30%" height="width"> -->
 </div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="media/IMG_7664D.JPG">
-      <img src="media/IMG_7664D.JPG" alt="Northern Lights" width="600" height="400">
-    </a>
+<div class="row">
+  <div class="column">
+      <a target="_blank" href="media/DSCN8197.JPG">
+        <img src="media/DSCN8197.JPG" alt="Forest" width="100%" height="auto">
+      </a>
   </div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="media/IMG_7658D.JPG">
-      <img src="media/IMG_7658D.JPG" alt="Mountains" width="600" height="400">
-    </a>
+  <div class="column">
+      <a target="_blank" href="media/DSCN8192.JPG">
+        <img src="media/DSCN8192.JPG" alt="Northern Lights" width="100%" height="auto">
+      </a>
   </div>
-</div>
 
-<div class="clearfix"></div>
-
-<div style="padding:6px;">
-  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+  <div class="column">
+      <a target="_blank" href="media/DSCN8176.JPG">
+        <img src="media/DSCN8176.JPG" alt="Mountains" width="100%" height="auto">
+      </a>
+  </div>
 </div>
 
 </body>
