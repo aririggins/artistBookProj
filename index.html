@@ -14,12 +14,22 @@ h1 {
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 1px;
-  padding-top: 10px;
+  padding-top: 15px;
+}
+
+h3 {
+  color: #b8af35;
+  font-family: arial, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  padding-top: 15px;
 }
 
 .squareimage {
-  padding-top: 20px;
-  padding-left: 10%;
+  padding-top: 10px;
+  /* padding-left: 10%; */
   /* float: left; */
 }
 
@@ -45,23 +55,32 @@ h1 {
   display: table;
 }
 
-div.gallery {
-  border: 2px solid #ccc;
+/* .video {
+  width: 100%    !important;
+} */
+
+.vidWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
 }
 
-div.gallery:hover {
-  border: 2px solid aquamarine;
+.vidWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.rounded-circle {
-  border-radius:50%!important;
-  float: left;
-
+.foot {
+  color: #b8af35;
 }
+
 </style>
 </head>
 <body>
@@ -71,8 +90,10 @@ div.gallery:hover {
 
 <div class="row">
   <div class="column1">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/_226a8Zs2C8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    </iframe>
+    <div class="vidWrapper">
+      <iframe class="video" src="https://www.youtube.com/embed/_226a8Zs2C8?autoplay=1&controls=0&loop=1" title="YouTube video player" frameborder="0" autoplay="1" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </div>
   </div>
   <div class="column1">
     <div class="squareimage">
@@ -85,9 +106,12 @@ div.gallery:hover {
 </div>
 <div class="row">
   <div class="column">
-      <a target="_blank" href="media/DSCN8197.JPG">
-        <img src="media/DSCN8197.JPG" alt="Forest" width="100%" height="auto">
+      <a target="_blank" href="media/DSCN8195.JPG">
+        <img src="media/DSCN8195.JPG" alt="Forest" width="100%" height="auto">
       </a>
+      <center>
+        <h3>Edition 1</h3>
+      </center>
   </div>
 
   <div class="column">
@@ -100,8 +124,37 @@ div.gallery:hover {
       <a target="_blank" href="media/DSCN8176.JPG">
         <img src="media/DSCN8176.JPG" alt="Mountains" width="100%" height="auto">
       </a>
+      <center>
+        <h3>Edition 2</h3>
+      </center>
   </div>
 </div>
+
+<center>
+  <div class="row">
+    <a target="_blank" href="media/DSCN8197.JPG">
+      <img src="media/DSCN8197.JPG" alt="Forest" width="80%" height="auto">
+    </a>
+  </div>
+</center>
+
+<div class="row">
+  <div class="column1">
+    <a target="_blank" href="media/DSCN8212.JPG">
+      <img src="media/DSCN8212.JPG" alt="Forest" width="100%" height="auto">
+    </a>
+  </div>
+  <div class="column1">
+    <a target="_blank" href="media/DSCN8205.JPG">
+      <img src="media/DSCN8205.JPG" alt="Forest" width="100%" height="auto">
+    </a>
+  </div>
+</div>
+<center>
+  <footer class="foot">
+    <p>&copy; Made by Ari Riggins for VIS392</p>
+  </footer>
+</center>
 
 </body>
 </html>
