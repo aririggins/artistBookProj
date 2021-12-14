@@ -1,13 +1,115 @@
-<html>
-    <head>
-        <title>
-            Artist Book
-        </title>
-    </head>
-    <body>
-        <p>
-            please let this show up.
-        </p>
-    </body>
+<html lang="en">
+<head>
+  <title>Art Book</title>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
 
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 49.99999%;
+  /* width: 24.99999%; */
+}
+
+/* @media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+} */
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+/* .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+.rounded-circle {
+  border-radius:50%!important
+}
+</style>
+</head>
+<body>
+
+<h2>Ari's Artist Book</h2>
+
+<section class="intro">
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="email.png">
+        <img src="email.png" alt="Cinque Terre" width="600" height="400">
+      </a>
+    </div>
+  </section>
+
+  <video width="320" height="240" controls>
+    <source src="IMG_7665.mov" type="video/mov">
+    <!-- <source src="movie.ogg" type="video/ogg"> -->
+  </video>
+</div>
+
+<img class="rounded-circle" src="IMG_7645D.JPG" alt="Generic placeholder image" width="140" height="140">
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="IMG_7645D.JPG">
+      <img src="IMG_7645D.JPG" alt="Forest" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="IMG_7664D.JPG">
+      <img src="IMG_7664D.JPG" alt="Northern Lights" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="IMG_7658D.JPG">
+      <img src="IMG_7658D.JPG" alt="Mountains" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
+
+</body>
 </html>
